@@ -201,7 +201,7 @@ ul#nav li.current a { color: rgb(176, 17, 155); }
 #about a:hover, #about a:focus { color: #11ABB0; }
 
 #about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
+   font: 22px/30px 'Sablo 27px', sans-serif;
    color: #fff;
    margin-bottom: 12px;
 }
@@ -226,7 +226,7 @@ ul#nav li.current a { color: rgb(176, 17, 155); }
    background: #444;
 }
 #about .download .button:hover {
-   background: rgb(176, 17, 155);;
+   background: rgb(176, 17, 155);
    color: #fff;
 }
 #about .download .button i {
@@ -303,7 +303,7 @@ ul#nav li.current a { color: rgb(176, 17, 155); }
    position: relative;
   	margin-bottom: 60px;
   	background: #ccc;
-  	height: 42px;
+  	height: 20px;
   	border-radius: 3px;
 }
 .bars li em {
@@ -324,8 +324,8 @@ ul#nav li.current a { color: rgb(176, 17, 155); }
    padding-right: 24px;
   	background: #313131;
    display: inline-block;
-  	height: 42px;
-   line-height: 42px;
+  	height: 20px;
+   line-height: 20px;
    border-radius: 3px 0 0 3px;
 }
 
@@ -415,9 +415,18 @@ ul#nav li.current a { color: rgb(176, 17, 155); }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
    padding-top: 90px;
    padding-bottom: 60px;
+
+   background: #1F1F1F url(../images/testimonials-bg.png) no-repeat center center;
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
+   background-attachment: fixed;
+
+   position: relative;
+   min-height: 350px;
+   width: 100%;
+   overflow: hidden;
 }
 #portfolio h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
@@ -556,7 +565,7 @@ ul#nav li.current a { color: rgb(176, 17, 155); }
    letter-spacing: 3px;
    cursor: pointer;
 }
-.popup-modal a:hover {	color: #00CCCC; }
+.popup-modal a:hover {	color: rgb(176, 17, 155); }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
 
@@ -596,13 +605,32 @@ ul#nav li.current a { color: rgb(176, 17, 155); }
    letter-spacing: 3px;
    color: #fff;
 }
-#call-to-action h1 span { display: none; }
+#call-to-action h1 span i {
+   font-size: 120px;
+
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+#call-to-action i:hover, 
+#call-to-action i:focus {
+   color: rgb(176, 17, 155);
+}
+
+#call-to-action a:hover,
+#call-to-action a:focus {
+  color: rgb(176, 17, 155);
+}
+
 #call-to-action .header-col h1:before {
    font-family: 'FontAwesome';
-   content: "\f0ac";
+   content: "";
 	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
+	font-size: 172px;
+   line-height: 172px;
    text-align: left;
    float: left;
    color: #fff;
@@ -615,23 +643,23 @@ ul#nav li.current a { color: rgb(176, 17, 155); }
    color: #EBEEEE;
    margin-bottom: 6px;
 }
-#call-to-action h2 a {
-   color: inherit;
+#call-to-action a {
+   color: #EBEEEE;
 }
 #call-to-action p {
    color: #636363;
    font-size: 17px;
 }
-/*#
-call-to-action .button {
-	color:#fff;
-   background: #0D0D0D;
+
+#call-to-action .button {
+	color:rgb(0, 0, 0);
+   background: rgb(255, 255, 255);
 }
-*/
+
 #call-to-action .button:hover,
 #call-to-action .button:active {
-   background: #FFFFFF;
-   color: #0D0D0D;
+   color: #fff;
+   background: rgb(176, 17, 155);
 }
 #call-to-action p span {
 	font-family: 'opensans-semibold', sans-serif; 
@@ -649,7 +677,7 @@ call-to-action .button {
    background-attachment: fixed;
 
    position: relative;
-   min-height: 200px;
+   min-height: 350px;
    width: 100%;
    overflow: hidden;
 }
@@ -673,7 +701,7 @@ call-to-action .button {
    line-height: 72px;
    text-align: left;
    float: left;
-   color: #fff;
+   color: rgb(255, 255, 255);
 }
 
 /*	Blockquotes */
@@ -693,7 +721,7 @@ call-to-action .button {
 }
 #testimonials blockquote cite {
    display: block;
-   font-size: 12px;
+   font-size: 18px;
    font-style: normal;
    line-height: 18px;
    color: #fff;
@@ -795,7 +823,7 @@ call-to-action .button {
    background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
-   color: #636363;
+   color: #b1abab;
 }
 #contact .section-head { margin-bottom: 42px; }
 
@@ -821,107 +849,30 @@ call-to-action .button {
    color: #ebeeee;
 }
 
-#contact h4 {
-   font: 16px/24px 'opensans-bold', sans-serif;
-   color: #EBEEEE;
+#contact h3 {
+   font-family: 'PT Serif', sans-serif;
+   color: rgb(255, 255, 255);
    margin-bottom: 6px;
 }
+
+#contact a {
+   font-family: 'Sablo 27px', sans-serif;
+   font-size: 3rem;
+   line-height: 1.2;
+   color: #ddcece;
+   border-bottom: 3px solid #ddcece;
+ }
+
+#contact a:hover,
+#contact a:focus {
+  border-bottom: 3px solid rgb(176, 17, 155);
+}
+
 #contact p.lead {
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
 }
 #contact .header-col { padding-top: 6px; }
-
-
-/* contact form */
-#contact form { margin-bottom: 30px; }
-#contact label {
-   font: 15px/24px 'opensans-bold', sans-serif;
-   margin: 12px 0;
-   color: #EBEEEE;
-	display: inline-block;
-	float: left;
-   width: 26%;
-}
-#contact input,
-#contact textarea,
-#contact select {
-   padding: 18px 20px;
-	color: #eee;
-	background: #373233;
-	margin-bottom: 42px;
-	border: 0;
-	outline: none;
-   font-size: 15px;
-   line-height: 24px;
-   width: 65%;
-}
-#contact input:focus,
-#contact textarea:focus,
-#contact select:focus {
-	color: #fff;
-	background-color: #11ABB0;
-}
-#contact button.submit {
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	color:#fff;
-   background: #0D0D0D;
-	border: none;
-   cursor: pointer;
-   height: auto;
-   display: inline-block;
-	border-radius: 3px;
-   margin-left: 26%;
-}
-#contact button.submit:hover {
-	color: #0D0D0D;
-	background: #fff;
-}
-#contact span.required {
-	color: #11ABB0;
-	font-size: 13px;
-}
-#message-warning, #message-success {
-   display: none;
-	background: #0F0F0F;
-	padding: 24px 24px;
-	margin-bottom: 36px;
-   width: 65%;
-   margin-left: 26%;
-}
-#message-warning { color: #D72828; }
-#message-success { color: #11ABB0; }
-
-#message-warning i,
-#message-success i {
-   margin-right: 10px;
-}
-#image-loader {
-   display: none;
-   position: relative;
-   left: 18px;
-   top: 17px;
-}
-
-
-/* Twitter Feed */
-#twitter {
-   margin-top: 12px;
-   padding: 0;
-}
-#twitter li {
-   margin: 6px 0px 12px 0;
-   line-height: 30px;
-}
-#twitter li span {
-   display: block;
-}
-#twitter li b a {
-   font: 13px/36px 'opensans-regular', Sans-serif;
-   color: #474747 !important;
-   border: none;
-}
 
 
 /* ------------------------------------------------------------------ */
@@ -937,13 +888,14 @@ footer {
    position: relative;
 }
 
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer a, footer a:visited { color: #fff; }
+footer a:hover, footer a:focus { color: rgb(176, 17, 155); }
 
 /* copyright */
 footer .copyright {
     margin: 0;
     padding: 0;
+    color: #5c5656;
  }
 footer .copyright li {
     display: inline-block;
@@ -1006,5 +958,5 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { background-color: rgb(176, 17, 155); }
 
